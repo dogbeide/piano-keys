@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+}
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  #piano {
+    /* background-color: #00471b; */
+    background-image: url('joshua-bartell-6vvIBTvL90A-unsplash.jpg');
+    width: 992px;
+    height: 290px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+  }
+  .piano-top {
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,1)), url('yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg');
+    /* background-image: url('yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 5px black inset;
+    height: 90px;
+    width: auto;
+  }
+  .keys {
+    margin: 0 20px;
+    /* background-color: #040404; */
+    width: 949px;
+    height: 180px;
+    padding-left: 2px;
+    overflow: hidden;
+  }
+  
+  .key {
+    background-color: #ffffff;
+    position: relative;
+    width: 41px;
+    height: 175px;
+    margin: 2px;
+    float: left;
+    border-radius: 0 0 3px 3px;
+  }
+  .key:hover {
+    background-color:#cfcfcf;
+  }
+  .key:active {
+    outline-width: 1px;
+    outline-color: #3ff;
+    outline-style: solid;
+    /* border-radius: 0 1px 1px 1px;
+    border-color: #3ff;
+    border-style: solid; */
+  }
+  
+  .key.black--key::after {
+    background-color: #1d1e22;
+    content: "";
+    position: absolute;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+    border-radius: 0 0 3px 3px;
+  }
+  key.black--key:hover::after {
+    background-color: #cfcfcf;
+  }
+  
+  .logo {
+    width: 200px;
+    position: absolute;
+    top: 23px;
+  }
+  
+  @media (max-width: 768px) {
+    #piano {
+      width: 358px;
+    }
+  
+    .keys {
+      width: 318px;
+    }
+  
+    .logo {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 1199px) and (min-width: 769px) {
+    #piano {
+      width: 675px;
+    }
+    .keys {
+      width: 633px;
+    }
+  }
